@@ -9,9 +9,6 @@ import org.apache.spark.api.java.JavaSparkContext;
  */
 public class Main {
     public static void main(String[] args) {
-        SparkConf sparkConf = new SparkConf().setMaster("local").setAppName("taxi");
-        JavaSparkContext sc = new JavaSparkContext(sparkConf);
-        JavaRDD<String> rdd = sc.textFile("data/taxi/taxi_order.txt");
-        System.out.println(rdd.count());
+
     }
 }
